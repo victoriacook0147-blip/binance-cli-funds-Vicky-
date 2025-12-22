@@ -24,5 +24,5 @@ func (c *Client) GetDividendHistory(asset string, startTime int64, endTime int64
 	if err != nil {
 		return nil, err
 	}
-	return DividendList(*dividends.Rows), nil
+	return DividendList(dividends.Rows), nil
 }

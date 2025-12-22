@@ -13,6 +13,7 @@ var (
 )
 
 func InitMarginCmds() []*cobra.Command {
+	marginCmd.AddCommand(margin.InitBorrowCmds()...)
 	marginCmd.AddCommand(margin.InitInterestHistoryCmds()...)
 	marginCmd.AddCommand(margin.InitLoanCmds()...)
 	marginCmd.AddCommand(margin.InitOrderCmds()...)

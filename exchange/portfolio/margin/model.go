@@ -85,3 +85,13 @@ func (i *MarginInterestHistoryList) Row() [][]any {
 	}
 	return rows
 }
+
+type MaxBorrow portfolio.MaxBorrow
+
+func (m *MaxBorrow) Header() []string {
+	return []string{"Amount", "Borrow Limit"}
+}
+
+func (m *MaxBorrow) Row() [][]any {
+	return [][]any{{m.Amount, m.BorrowLimit}}
+}

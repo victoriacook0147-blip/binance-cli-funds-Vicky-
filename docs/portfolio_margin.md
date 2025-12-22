@@ -1,6 +1,9 @@
 # Portfolio Margin Module
 
 ## Quick Navigation
+- [Borrow](#borrow)
+  - [Query margin max borrow](#borrow--query-margin-max-borrow)
+  - [Query Margin Max Withdraw](#borrow--query-margin-max-withdraw)
 - [Interest](#interest---get-margin-borrowloan-interest-history)
 - [Loan](#loan)
   - [Loan exec](#loan---loan-exec)
@@ -15,6 +18,23 @@
   - [Cancel all order by symbol](#order---cancel-all-order-by-symbol)
   - [Query All Margin Account Orders](#order---query-all-margin-account-orders)
   - [Query Current Margin Open Order](#order---query-current-margin-open-order)
+
+
+## Borrow - Query margin max borrow
+Exec: `./binance-cli portfolio margin borrow max-borrow --asset=USDT`
+```shell
+┌───────────────┬──────────────┐
+│    AMOUNT     │ BORROW LIMIT │
+├───────────────┼──────────────┤
+│ 7682.76407737 │ 400000.0     │
+└───────────────┴──────────────┘
+```
+
+## Borrow - Query Margin Max Withdraw
+Exec: `./binance-cli portfolio margin borrow max-withdraw --asset=USDT`
+```shell
+margin max withdraw: 755.00477851 USDT
+```
 
 ## Interest - Get Margin Borrow/Loan Interest History
 Exec: `./binance-cli portfolio margin interest-history`

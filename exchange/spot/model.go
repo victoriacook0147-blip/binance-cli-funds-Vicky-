@@ -64,7 +64,7 @@ func (o *OrderList) Row() [][]any {
 	return rows
 }
 
-type DividendList []binance.DividendResponse
+type DividendList []*binance.DividendResponse
 
 func (d *DividendList) Header() []string {
 	return []string{"ID", "Asset", "Amount", "Dividend Time", "Info", "Transaction ID"}

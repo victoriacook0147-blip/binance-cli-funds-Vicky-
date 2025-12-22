@@ -19,6 +19,7 @@ func init() {
 	portfolioCmd.AddCommand(portfolio.InitBalancesCmds()...)
 	portfolioCmd.AddCommand(portfolio.InitBnbTransferCmds()...)
 	portfolioCmd.AddCommand(portfolio.InitMarginCmds()...)
+	portfolioCmd.AddCommand(portfolio.InitRepayFuturesNegativeBalanceCmds()...)
 	portfolioCmd.AddCommand(portfolio.InitUMCmds()...)
 
 	RootCmd.AddCommand(portfolioCmd)
