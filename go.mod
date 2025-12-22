@@ -3,7 +3,7 @@ module github.com/UnipayFI/binance-cli
 go 1.24.0
 
 require (
-	github.com/adshao/go-binance/v2 v2.8.4
+	github.com/adshao/go-binance/v2 v2.8.9
 	github.com/olekukonko/tablewriter v1.0.9
 	github.com/spf13/cobra v1.9.1
 )
