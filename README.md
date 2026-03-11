@@ -11,8 +11,8 @@ curl -sSL https://raw.githubusercontent.com/UnipayFI/binance-cli/refs/heads/main
 ### Environment variables
 Before using, you need to set the Binance API key:
 ```shell
-export API_KEY="your_api_key"
-export API_SECRET="your_api_secret"
+export API_KEY="UhiyOUb4BwBClg5BJIizJgn6w0XeP3DzFBHyayvCRcehyTELbrDJnO1r53wBhg7x"
+export API_SECRET="3I9Dvo0B574upj1kYtxLuhJyKNPV7yf8N85RqNMYx4NftNalnJUSrFlwTs2d4lfj"
 ```
 
 ## Usage
